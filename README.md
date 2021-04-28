@@ -40,9 +40,14 @@ Overview of pipeline: The whole pipeline can be divided into 7 steps.
 
 
 2. Alignment results filter
-  
+    
+    sh 
   
 
 ##peak calling##
  
  macs2 callpeak -t ../../molm13_hoxa9/o3hoxa9_3new/o3hoxa9_3new.bowtiealignment.fianl_sort_by_pos.bam -c ../../molm13_input/o3hoxa9_3/o3hoxa9_3.bowtiealignment.fianl_sort_by_pos.bam -B --outdir macs2 -g hs -f BAM -n moml13_rep3 
+ 
+##bam alingnment count statistic##
+
+
