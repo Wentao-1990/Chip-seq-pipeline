@@ -28,16 +28,16 @@ Overview of pipeline: The whole pipeline can be divided into 7 steps.
 ##Command line##
 1. QC and alingment are concentrated in one script
 
-  perl chipseq_processing.pl -read1 20060FL-04-02-04_S51_L004_R1_001.fastq.gz,20060FL-04-02-05_S52_L004_R1_001.fastq.gz,20060FL-04-02-06_S53_L004_R1_001.fastq.gz -read2 20060FL-04-02-04_S51_L004_R2_001.fastq.gz,20060FL-04-02-05_S52_L004_R2_001.fastq.gz,20060FL-04-02-06_S53_L004_R2_001.fastq.gz -sample o3input_1,o3input_2,o3input_3 -rawdata 1 -genome ../../../../genomes/hg19/hg19
+  perl chipseq_processing.pl -read1 sample1_R1.fq.gz,sample2_R1.fq.gz -read2 sample1_R2.fq.gz,sample2_R2.fq.gz -sample sample1,sample2 -rawdata 1 -genome PATH_TO_YOUR_INDEXED_GENOME
 
--read1: sample1_R1, if multiple samples were provides, 
--read2: sample1_R2
+-read1: sample1_R1...samplen_R1, if multiple samples were provides, comma was used to seperate the input samples.
+-read2: sample1_R2...samplen_R2.
 -genome: indexed genome 
 -rawdata: 1 indocates raw data; 0 indicates clean data, which will do the alignment directly.
 
-
 2. Alignment results filter
   
+  sh
 
 ##peak calling##
  macs2 callpeak -t ../../molm13_hoxa9/o3hoxa9_3new/o3hoxa9_3new.bowtiealignment.fianl_sort_by_pos.bam -c ../../molm13_input/o3hoxa9_3/o3hoxa9_3.bowtiealignment.fianl_sort_by_pos.bam -B --outdir macs2 -g hs -f BAM -n moml13_rep3 
