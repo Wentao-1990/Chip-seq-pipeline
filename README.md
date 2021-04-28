@@ -30,7 +30,8 @@ b. enrichment efficity of antibody
 7.Peak annotation
 
 Command line
-1. QC and alingment are concentrated in one script:
+1. QC and alingment are concentrated in one script
+
   perl chipseq_processing.pl -read1 20060FL-04-02-04_S51_L004_R1_001.fastq.gz,20060FL-04-02-05_S52_L004_R1_001.fastq.gz,20060FL-04-02-06_S53_L004_R1_001.fastq.gz -read2 20060FL-04-02-04_S51_L004_R2_001.fastq.gz,20060FL-04-02-05_S52_L004_R2_001.fastq.gz,20060FL-04-02-06_S53_L004_R2_001.fastq.gz -sample o3input_1,o3input_2,o3input_3 -rawdata 1 -genome ../../../../genomes/hg19/hg19
 
 -read1: sample1_R1, if multiple samples were provides, 
