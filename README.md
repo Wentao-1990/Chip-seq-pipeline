@@ -1,29 +1,29 @@
 # Chip-seq-pipeline
 Simply the pipeline for Chipseq data analysis.
 Prerequirements:
-1. cutadapt 3.4
-2. trim_galore 0.6.6
-3. bowtie2 2.4.2
-4. macs2 2.2.7.1
-4. R 4.0.3
-5. ChIPseeker 1.26.2
-6. deeptools 3.5.1
+  1. cutadapt=3.4
+  2. trim_galore=0.6.6
+  3. bowtie2=2.4.2
+  4. macs2=2.2.7.1
+  4. R=4.0.3
+  5. ChIPseeker=1.26.2
+  6. deeptools=3.5.1
 
 ##pipeline for chip-seq analysis###
 
 Overview of pipeline: The whole pipeline can be divided into 7 steps.
- 1. quality control(QC)
- filter low-quality reads and remove adapters 
- 2. index genome
- 3. alignment
- 4. alignment filter
-   a. alignment qulity >1 && sort according to the coordinate
-   b. mark and remove pcr-duplication
- 5. assesment of the alignment 
-   a. sample correaltaion/ PCA analysis
-   b. enrichment efficity of antibody
- 6. Peakcalling
- 7.Peak annotation
+   1. quality control(QC)
+   filter low-quality reads and remove adapters 
+   2. index genome
+   3. alignment
+   4. alignment filter
+     a. alignment qulity >1 && sort according to the coordinate
+     b. mark and remove pcr-duplication
+   5. assesment of the alignment 
+     a. sample correaltaion/ PCA analysis
+     b. enrichment efficity of antibody
+   6. Peakcalling
+   7.Peak annotation
 
 ##Command line##
 1. QC and alingment are concentrated in one script
