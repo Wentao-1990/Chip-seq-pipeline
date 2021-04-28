@@ -30,10 +30,10 @@ Overview of pipeline: The whole pipeline can be divided into 7 steps.
 
   perl chipseq_processing.pl -read1 sample1_R1.fq.gz,sample2_R1.fq.gz -read2 sample1_R2.fq.gz,sample2_R2.fq.gz -sample sample1,sample2 -rawdata 1 -genome PATH_TO_YOUR_INDEXED_GENOME
 
--read1: sample1_R1...samplen_R1, if multiple samples were provides, comma was used to seperate the input samples.
--read2: sample1_R2...samplen_R2.
--genome: indexed genome 
--rawdata: 1 indocates raw data; 0 indicates clean data, which will do the alignment directly.
+-read1: sample1_R1...samplen_R1, if multiple samples were provides, comma was used to seperate the input samples.\n
+-read2: sample1_R2...samplen_R2.\n
+-genome: indexed genome \n
+-rawdata: 1 indocates raw data; 0 indicates clean data, which will do the alignment directly.\n
 
 2. Alignment results filter
   
