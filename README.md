@@ -1,4 +1,4 @@
-# Chip-seq-pipeline
+# Chip-seq pipeline
 Simply the pipeline for Chipseq data analysis.
 Prerequirements:
   1. cutadapt=3.4
