@@ -42,7 +42,7 @@ Overview of pipeline: The whole pipeline can be divided into 7 steps.
 
 2. Alignment results filter
     
-    sh 
+    sh sam_processing.sh 
   
 
 ##peak calling##
