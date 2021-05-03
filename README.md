@@ -27,7 +27,7 @@ Overview of pipeline: The whole pipeline can be divided into 7 steps.
    7.Peak annotation
 
 ##Command line##
-1. QC and alingment are concentrated in one script
+1. QC and alingment are integrated in one script
 
     perl chipseq_processing.pl -read1 sample1_R1.fq.gz,sample2_R1.fq.gz -read2 sample1_R2.fq.gz,sample2_R2.fq.gz -sample sample1,sample2 -rawdata 1 -genome PATH_TO_YOUR_INDEXED_GENOME
 
