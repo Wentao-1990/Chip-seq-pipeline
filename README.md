@@ -1,5 +1,6 @@
 # Chip-seq pipeline
 Simply the pipeline for Chipseq data analysis.
+
 Prerequirements:
   1. cutadapt=3.4
   2. trim_galore=0.6.6
