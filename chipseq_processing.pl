@@ -72,7 +72,7 @@ if($rawdata){
 
 
 
-#print "####start featureCount####\n";
+print "####check whether the aglignment is done####\n";
 
 #while(1){
 ##	if($tophatout){
@@ -110,6 +110,12 @@ sub checkfile{
 		}
 	}
 	return $tag;
+}
+
+sub checkfilesize{
+	my (@logfile)=@_;
+	my $tag=0;
+
 }
 
 sub trimrawread{
